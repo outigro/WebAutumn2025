@@ -3,17 +3,17 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 <head> 
 <meta charset="UTF-8">
-<p id="puna"> Otsikko punaisella, id-valitsemen avulla </p>
+<p id="red"> Main heading with red, id </p>
 </head>
 	<table>
 		<tbody>
 			<tr>
-				<td> Nimi </td>
-				<td> S.aika </td>
+				<td> Name </td>
+				<td> B.day </td>
 			</tr>
 			<tr>
 				<td> Outi Onnellinen </td>
-				<td> 20.5.1960 </td>
+				<td> 01.02.2020 </td>
 			</tr>
 			<tr>
 				<td> Sari Sulavesi </td>
