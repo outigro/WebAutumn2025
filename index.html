@@ -1,71 +1,122 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Task 1</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            table
-            {
-                background-color: white; color: rgb(8, 8, 28);
-            }
-            </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 2 – CSS Fundamentals</title>
 
-    <body bgcolor="lightblue">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-        <h1 style="color:brown">SATYANDRA</h1>
-        <p>Hello! This is Satyandra Kumar Chaudhary Kurmi. I am from Nepal and currently studying in Laurea University of Applied Sciences in Leepavaran Campus. My hobby is reading books, playing games, travelling.</p>
-   
-        <img src= "F:\1 st sem\website development\2ac31374-152b-4b35-b07e-da46def768c9.jpg"
-        alt="This is my image while celebrating diwali.">
-       
-        <h2>Ordered List</h2>
-        <ol>
-            <li> momo </li>
-            <li> bread </li>
-            <li> tea </li>
-        </ol>
-        <h2>Unodered List</h2><ul>
-            <li>pepsi</li>
-            <li>frooti</li>
-            <li>fanta</li>
-        </ul>
-     <a href="https://www.youtube.com/">youtube</a> <br>
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: green;
+            font-size: 2em;
+        }
 
-   
-     <table>
-        <br>
+        p {
+            color: blue;
+        }
+
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        div.box {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"] {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS example -->
+    <h1 style="border-bottom: 2px solid black;">CSS Workshop Example</h1>
+
+    <p>This paragraph is styled using internal CSS.</p>
+
+    <div class="box">
+        This box uses padding and margin.
+    </div>
+
+    <h2>Sample Table</h2>
+    <table>
         <tr>
-          <th>course name</th>
-          <th>course instructor</th>  
+            <th>Name</th>
+            <th>Email</th>
         </tr>
-
-
         <tr>
-         <td>website development</td>
-         <td>Outi Grotenefelt</td>
+            <td>Ajay Kumar Mehta</td>
+            <td>ajaykmehta0202@gmail.com</td>
         </tr>
-
-
         <tr>
-         <td>Basics of Digital Service</td>
-         <td>Outi Loikkanen</td>
+            <td>ABC</td>
+            <td>abc@example.com</td>
         </tr>
+    </table>
 
-
-        <tr>
-         <td>Basic of ICT</td>
-         <td>Deepak Chhetri</td>
-         </tr>
-     </table>
-
-
-      <form> <br>
+    <h2>Sample Form</h2>
+    <form>
         <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
-      </form>
-    </body>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
 </html>
