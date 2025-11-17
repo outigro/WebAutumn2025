@@ -1,71 +1,82 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Task 1 - no1</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            table
-            {
-                background-color: white; color: rgb(8, 8, 28);
-            }
-            </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title> 
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
 
-    <body bgcolor="lightblue">
+    <h1>Welcome to my Page</h1>
 
-        <h1 style="color:brown">SATYANDRA</h1>
-        <p>Hello! This is Satyandra Kumar Chaudhary Kurmi. I am from Nepal and currently studying in Laurea University of Applied Sciences in Leepavaran Campus. My hobby is reading books, playing games, travelling.</p>
-   
-        <img src= "F:\1 st sem\website development\2ac31374-152b-4b35-b07e-da46def768c9.jpg"
-        alt="This is my image while celebrating diwali.">
-       
-        <h2>Ordered List</h2>
-        <ol>
-            <li> momo </li>
-            <li> bread </li>
-            <li> tea </li>
-        </ol>
-        <h2>Unodered List</h2><ul>
-            <li>pepsi</li>
-            <li>frooti</li>
-            <li>fanta</li>
-        </ul>
-     <a href="https://www.youtube.com/">youtube</a> <br>
+    <p>
+        My name is <b>Angat Poudel</b>, and I am from <b>Nepal</b>, a country known for its rich culture and stunning mountain landscapes. 
+        I am currently 23 years old and pursuing my studies in the <b>Bachelor’s in Information Technology (BIT)</b> program 
+        at Laurea University of Applied Sciences. I have a strong interest in technology and enjoy exploring how digital 
+        innovations can shape the future. Outside of academics, I love spending time outdoors and playing various outdoor 
+        games, which help me stay active and balanced. I consider myself an enthusiastic learner, always eager to develop 
+        new skills and gain international experiences. Studying in Finland has given me the opportunity to grow both personally 
+        and professionally while connecting with people from diverse backgrounds.
+    </p>
 
-   
-     <table>
-        <br>
-        <tr>
-          <th>course name</th>
-          <th>course instructor</th>  
-        </tr>
+    <center>
+        <img src="angat.jpg" alt="Portrait of Angat Poudel" width="200" height="200" border="3" style="border-radius:50%;">
+    </center>
 
+    <h2>My Goals (Ordered List)</h2>
+    <ol>
+        <li>Going out</li>
+        <li>Eating in cafes</li>
+        <li>Returning home</li>
+    </ol>
 
-        <tr>
-         <td>website development</td>
-         <td>Outi Grotenefelt</td>
-        </tr>
+    <h2>My Hobbies (Unordered List)</h2>
+    <ul>
+        <li>Cooking</li>
+        <li>E-games</li>
+        <li>Fishing</li>
+    </ul>
 
+    <center>
+        <div>
+            <a href="https://canvas.laurea.fi/courses/13224/assignments/242108" target="_blank">
+                <font color="blue">Visit Laurea</font>
+            </a>
+        </div>
 
-        <tr>
-         <td>Basics of Digital Service</td>
-         <td>Outi Loikkanen</td>
-        </tr>
+        <table border="1" cellpadding="8" cellspacing="0.5">
+            <tr>
+                <th>Course Name</th>
+                <th>Instructor</th>
+            </tr>
+            <tr>
+                <td>HTML & CSS Basics</td>
+                <td>Outi Grotenfelt</td>
+            </tr>
+            <tr>
+                <td>Project Management</td>
+                <td>S. King</td>
+            </tr>
+            <tr>
+                <td>Finnish Language</td>
+                <td>Miss Meri</td>
+            </tr>
+        </table>
+    </center>
 
+    <br><br>
 
-        <tr>
-         <td>Basic of ICT</td>
-         <td>Deepak Chhetri</td>
-         </tr>
-     </table>
-
-
-      <form> <br>
+    <!--  Form left as you originally wrote it -->
+    <form action="#" method="post">
         <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
-      </form>
-    </body>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
 </html>
