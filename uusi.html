@@ -3,128 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop 3 – Advanced CSS</title>
-
+    <title>Document</title>
     <style>
-        /* Task 1: CSS aTransitions */
-        .transition-button {
-            background-color: lightblue;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+      .transition-button {
+  background-color: lightblue;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-        .transition-button:hover {
-            background-color: lightcoral;
-        }
+.transition-button:hover {
+  background-color: lightcoral;
+}
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  position: relative;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  height: 200px;
+  width: 500px;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.quote::before {
+  content: "“";
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: lightgray;
+}
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
 
 
-        /* Task 2: CSS Animations */
-        .animation-box {
-            width: 50px;
-            height: 50px;
-            background-color: lightgreen;
-            position: relative;
-            animation: move 2s infinite alternate;
-        }
-
-        @keyframes move {
-            from {
-                left: 0;
-            }
-            to {
-                left: 100px;
-            }
-        }
-
-
-        /* Task 3: CSS Pseudo-classes */
-        .pseudo-list li:nth-child(odd) {
-            background-color: lightgray;
-        }
-
-        .pseudo-list li:nth-child(even) {
-            background-color: white;
-        }
-
-
-        /* Task 4: CSS Filters */
-        .filter-image {
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
-
-        .filter-image:hover {
-            filter: grayscale(0%);
-        }
-
-
-        /* Task 5: CSS Pseudo-elements */
-        .quote {
-            position: relative;
-            padding-left: 20px;
-            font-style: italic;
-        }
-
-        .quote::before {
-            content: '“';
-            font-size: 40px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: lightgray;
-        }
-
-        /* Optional styling for readability */
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        h1, h2 {
-            margin-bottom: 10px;
-        }
-
-        img {
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
-
-    <h1>Workshop 3: Advanced CSS    ghu</h1>
-
-    <!-- Task 1: CSS Transitions -->
-    <h2>Task 1: CSS Transition Button</h2>
     <button class="transition-button">Hover me</button>
-
-
-    <!-- Task 2: CSS Animations -->
-    <h2>Task 2: CSS Animation Box</h2>
     <div class="animation-box"></div>
-
-
-    <!-- Task 3: CSS Pseudo-classes -->
-    <h2>Task 3: CSS Pseudo-classes List</h2>
     <ul class="pseudo-list">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-    </ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul><img src="/picture.jpg" alt="Sample Image" class="filter-image">
+<blockquote class="quote">
+  This is a sample quote.
+</blockquote>
 
 
-    <!-- Task 4: CSS Filters -->
-    <h2>Task 4: CSS Filter Image</h2>
-    <img src="https://via.placeholder.com/150" alt="Sample Image" class="filter-image">
 
 
-    <!-- Task 5: CSS Pseudo-elements -->
-    <h2>Task 5: CSS Pseudo-element Quote</h2>
-    <blockquote class="quote">
-        This is a sample quote.
-    </blockquote>
+
 
 </body>
 </html>
