@@ -3,182 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
-    <link rel="stylesheet" href="styles.css">
-     
+    <title>Workshop 3 – Advanced CSS</title>
+
     <style>
-        select {
-            background-color: rgb(123, 255, 0);
-            color: rgba(19, 18, 19, 0.849);
+        /* Task 1: CSS Transitions */
+        .transition-button {
+            background-color: lightblue;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        select option {
-            background-color: lightcyan;
-            color: black;
+
+        .transition-button:hover {
+            background-color: lightcoral;
         }
-        div {
+
+
+        /* Task 2: CSS Animations */
+        .animation-box {
+            width: 50px;
+            height: 50px;
+            background-color: lightgreen;
+            position: relative;
+            animation: move 2s infinite alternate;
+        }
+
+        @keyframes move {
+            from {
+                left: 0;
+            }
+            to {
+                left: 100px;
+            }
+        }
+
+
+        /* Task 3: CSS Pseudo-classes */
+        .pseudo-list li:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        .pseudo-list li:nth-child(even) {
+            background-color: white;
+        }
+
+
+        /* Task 4: CSS Filters */
+        .filter-image {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .filter-image:hover {
+            filter: grayscale(0%);
+        }
+
+
+        /* Task 5: CSS Pseudo-elements */
+        .quote {
+            position: relative;
+            padding-left: 20px;
+            font-style: italic;
+        }
+
+        .quote::before {
+            content: '“';
+            font-size: 40px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: lightgray;
+        }
+
+        /* Optional styling for readability */
+        body {
+            font-family: Arial, sans-serif;
             padding: 20px;
-            margin: 10px;
         }
-.transition-button {
-        background-color: lightblue;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-     
-      .transition-button:hover {
-        background-color: lightcoral;
-      }
-      .animation-box {
-       
-        position: relative;
-        animation: move 10s infinite alternate;
-      }
-     
-      @keyframes move {
-        from {
-          left: 0;
+
+        h1, h2 {
+            margin-bottom: 10px;
         }
-        to {
-          left: 1250px;
+
+        img {
+            margin-top: 10px;
         }
-      }
-      .pseudo-list li:nth-child(odd) {
-        background-color: rgb(211, 211, 211);
-      }
-     
-      .pseudo-list li:nth-child(even) {
-        background-color: white;
-      }
-      .filter-image {
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-      }
-     
-      .filter-image:hover {
-        filter: grayscale(0%);
-      }
-      .quote {
-        position: relative;
-        padding-left: 20px;
-        font-style: italic;
-      }
-     
-      .quote::before {
-        content: '“';
-        font-size: 40px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: lightgray;
-      }
     </style>
 </head>
+<body>
 
-<body bgcolor="lightblue">
+    <h1>Workshop 3: Advanced CSS</h1>
 
-   
-        <h1 style="color:rgb(9, 9, 151);">Welcome to my Page</h1>
+    <!-- Task 1: CSS Transitions -->
+    <h2>Task 1: CSS Transition Button</h2>
+    <button class="transition-button">Hover me</button>
 
-        <p style="color: rgb(95, 54, 4); font-size: medium;">
-            My name is <b>Abishek Jayswal</b>, and I am from <b>Nepal</b>, a country known for its rich culture and stunning mountain landscapes.
-            I am currently 23 years old and pursuing my studies in the <b>Bachelor’s in Information Technology (BIT)</b> program
-            at Laurea University of Applied Sciences. I have a strong interest in technology and enjoy exploring how digital
-            innovations can shape the future. Outside of academics, I love spending time outdoors and playing various outdoor
-            games, which help me stay active and balanced. I consider myself an enthusiastic learner, always eager to develop
-            new skills and gain international experiences. Studying in Finland has given me the opportunity to grow both personally
-            and professionally while connecting with people from diverse backgrounds.
-        </p>
-        <center>
-        <button class="transition-button">Hover me</button>
-        </center>
-        <blockquote class="quote">
-         Health is wealth
-      </blockquote>
-<center>
-        <img src="abishek.jpg" alt="Portrait of Abishek Jayswal" width="200" height="200" border="3" style="border-radius:50%;" align="center" class="filter-image">>
-</center>
-        <h2 style="color:darkgreen;">My Goals (Ordered List)</h2>
-   
 
-    <ol>
-        <li>Join Cricket Club</li>
-        <li>Get Selected</li>
-        <li>Play for Nation</li>
-    </ol>
+    <!-- Task 2: CSS Animations -->
+    <h2>Task 2: CSS Animation Box</h2>
+    <div class="animation-box"></div>
 
-   
-        <h2 style="color:darkgreen;">My Hobbies (Unordered List)</h2>
-   
-    <ul>
-        <li>Cooking</li>
-        <li>E-games</li>
-        <li>Fishing</li>
-    </ul>
+
+    <!-- Task 3: CSS Pseudo-classes -->
+    <h2>Task 3: CSS Pseudo-classes List</h2>
     <ul class="pseudo-list">
-        <li>maths</li>
-        <li>sciences</li>
-        <li>social</li>
-        <li>English</li>
-      </ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
 
-    <center>
-        <div>
-        <a href="https://canvas.laurea.fi/courses/13224/assignments/242108" target="_blank">
-            <font color="blue">Visit Laurea</font>
-        </a>
-    </div>
-        <br><br>
 
-        <table border="2" cellpadding="10" cellspacing="0" bgcolor="#ffffff">
-            <tr bgcolor="#99ccff">
-                <th>Course Name</th>
-                <th>Instructor</th>
-            </tr>
-            <tr>
-                <td>HTML & CSS Basics</td>
-                <td>Outi Grotenfelt</td>
-            </tr>
-            <tr>
-                <td>Project Management</td>
-                <td>S. King</td>
-            </tr>
-            <tr>
-                <td>Finnish Language</td>
-                <td>Miss Meri</td>
-            </tr>
-        </table>
-        </center>
-   
+    <!-- Task 4: CSS Filters -->
+    <h2>Task 4: CSS Filter Image</h2>
+    <img src="https://via.placeholder.com/150" alt="Sample Image" class="filter-image">
 
-        <br><br>
 
-        <form action="#" method="post" bgcolor="#ffffff">
-            <fieldset>
-                <legend>Job application submission</legend>
-Full Name: <input type="text" name="Appicantname" placeholder="Applicant's name"> <br><br>
-Address: <input type="text" name="name" placeholder="Current Address"><br><br>
-Email: <input type="email" name="Email" placeholder="Applicant's Email"><br><br>
-Contact: <input type="number" name="Mobilenumber" placeholder="Phone number"> <br><br>
-Gender: <input type="radio">Male <input type="radio">Female <br><br>
-Documents: <input type="checkbox">Phygine passport
-<input type="checkbox">Occupational passport
-<input type="checkbox">Road safety card
-<br><br>
-<select>
-    <option>--Worktime--</option>
-    <option>Full time</option>
-    <option>Gig work</option>
-    <option>Part time</option>
-    <option>fixed term</option>
-</select>
-<br><br>
- <input type="submit" value="submit">
-</fieldset>
-</form>
-<h1 class="animation-box" style="color: blue;">
-    Thank you for visit
-</h1>
+    <!-- Task 5: CSS Pseudo-elements -->
+    <h2>Task 5: CSS Pseudo-element Quote</h2>
+    <blockquote class="quote">
+        This is a sample quote.
+    </blockquote>
+
 </body>
 </html>
